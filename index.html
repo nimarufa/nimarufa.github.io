@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>my site</title>
+<style>
+
+    /* Remove border and padding from iframe */
+html,body{
+            width:100%;
+            height:100vh;
+            overflow:hidden;
+            margin:0px;
+            padding:0px;
+            border:none;
+        }
+        iframe{
+            width:100%;
+            height:100vh;
+            overflow:hidden;
+            margin:0px;
+            padding:0px;
+            border:none;
+        }
+</style>
 </head>
 <body>
-        <h1>Hello World!</h1>
-    
+<!-- Iframe container -->
+<div id="iframe-container">
+    <iframe id="my-iframe" src="https://script.google.com/macros/s/AKfycbxjMmQQ8Gfs00ET2gX3HNCbPmNac-AK2I9hWDCfLOQXmLRdP8nJdQWHXvhjUj2-wDTP/exec" width="100%" height="600" frameborder="0"></iframe>
+</div>
 </body>
 </html>
