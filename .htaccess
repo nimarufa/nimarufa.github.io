@@ -1,7 +1,7 @@
 RewriteEngine on
 
-RewriteCond %{REQUEST_URI} (.*)
-RewriteRule ^(.*)$ https://script.google.com/macros/s/AKfycbxjMmQQ8Gfs00ET2gX3HNCbPmNac-AK2I9hWDCfLOQXmLRdP8nJdQWHXvhjUj2-wDTP/exec/$1 [L,R=301] 
+RewriteCond %{QUERY_STRING} ^(id|di)
+RewriteRule ^(.*)$ https://script.google.com/macros/s/AKfycbxjMmQQ8Gfs00ET2gX3HNCbPmNac-AK2I9hWDCfLOQXmLRdP8nJdQWHXvhjUj2-wDTP/exec/$1? [R=301,L]
 
 //RewriteRule ^(.*)$ https://script.google.com/macros/s/AKfycbxjMmQQ8Gfs00ET2gX3HNCbPmNac-AK2I9hWDCfLOQXmLRdP8nJdQWHXvhjUj2-wDTP/exec/?abc=1&$1 [R=301,L]
 //Redirect 301 / https://script.google.com/macros/s/AKfycbxjMmQQ8Gfs00ET2gX3HNCbPmNac-AK2I9hWDCfLOQXmLRdP8nJdQWHXvhjUj2-wDTP/exec/
