@@ -26,6 +26,13 @@ html,body{
 </style>
 </head>
 <body>
+<script type="text/javascript">
+
+$(function() {
+const iframe = document.getElementById('frame');
+iframe.src = iframe.src + window.location.search;​​​​​​​​​​​​​​​​
+}
+</script>
     <p>Hello World!</p>
 <!-- Iframe container -->
 <div id="iframe-container">
