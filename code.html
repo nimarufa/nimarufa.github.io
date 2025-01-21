@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my site</title>
+<style>
+
+    /* Remove border and padding from iframe */
+html,body{
+            width:100%;
+            height:100vh;
+            overflow:hidden;
+            margin:0px;
+            padding:0px;
+            border:none;
+        }
+        iframe{
+            width:100%;
+            height:100vh;
+            overflow:hidden;
+            margin:0px;
+            padding:0px;
+            border:none;
+        }
+</style>
+</head>
+<body>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+	window.location.href = "injwp://user/" + window.location.search;
+});
+
+</script>
+
+    <p>Открыть в приложении...</p>
+<iframe></iframe>
+</body>
+</html>
