@@ -27,16 +27,15 @@ html,body{
 </head>
 <body>
 <script type="text/javascript">
-
-$(function() {
-const iframe = document.getElementById('myiframe');
-iframe.src = iframe.src + window.location.search;​​​​​​​​​​​​​​​​
+document.onload = function(e){ 
+    const iframe = document.getElementById('myiframe');
+    iframe.src = "https://script.google.com/macros/s/AKfycbxjMmQQ8Gfs00ET2gX3HNCbPmNac-AK2I9hWDCfLOQXmLRdP8nJdQWHXvhjUj2-wDTP/exec" + window.location.search;​​​​​​​​​​​​​​​​
 }
 </script>
-    <p>Hello World!!!</p>
+    <p>Hello World!</p>
 <!-- Iframe container -->
 <div id="iframe-container">
-    <iframe id="myiframe" src="https://script.google.com/macros/s/AKfycbxjMmQQ8Gfs00ET2gX3HNCbPmNac-AK2I9hWDCfLOQXmLRdP8nJdQWHXvhjUj2-wDTP/exec" width="100%" height="600" frameborder="0"></iframe>
+    <iframe id="myiframe" src="" width="100%" height="600" frameborder="0"></iframe>
 </div>
 </body>
 </html>
